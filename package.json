@@ -1,0 +1,19 @@
+{
+  "name": "ngo-resource-management-system",
+  "version": "1.0.0",
+  "description": "A full-stack NGO Resource Management System with dashboard, resource tracking, volunteer management, and donation records.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "keywords": [
+    "ngo",
+    "resource-management",
+    "nodejs",
+    "dashboard",
+    "full-stack"
+  ],
+  "author": "Arpit Sharma",
+  "license": "MIT"
+}

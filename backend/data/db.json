@@ -1,0 +1,90 @@
+{
+  "resources": [
+    {
+      "id": "RES-1001",
+      "name": "Rice Bags",
+      "category": "Food",
+      "quantity": 120,
+      "unit": "bags",
+      "location": "Central Warehouse",
+      "status": "In Stock",
+      "lastUpdated": "2026-04-20"
+    },
+    {
+      "id": "RES-1002",
+      "name": "First Aid Kits",
+      "category": "Medical",
+      "quantity": 42,
+      "unit": "kits",
+      "location": "Health Camp Van",
+      "status": "Low Stock",
+      "lastUpdated": "2026-04-19"
+    },
+    {
+      "id": "RES-1003",
+      "name": "School Notebooks",
+      "category": "Education",
+      "quantity": 300,
+      "unit": "pieces",
+      "location": "Education Center",
+      "status": "In Stock",
+      "lastUpdated": "2026-04-21"
+    }
+  ],
+  "volunteers": [
+    {
+      "id": "VOL-2001",
+      "name": "Riya Mehta",
+      "email": "riya.mehta@example.org",
+      "phone": "+91 98765 43210",
+      "skill": "Field Coordination",
+      "availability": "Weekends",
+      "assignedProject": "Women Health Drive"
+    },
+    {
+      "id": "VOL-2002",
+      "name": "Karan Verma",
+      "email": "karan.verma@example.org",
+      "phone": "+91 91234 56789",
+      "skill": "Teaching",
+      "availability": "Evenings",
+      "assignedProject": "Rural Literacy Mission"
+    }
+  ],
+  "donations": [
+    {
+      "id": "DON-3001",
+      "donor": "Aarav Foundation",
+      "type": "Money",
+      "amount": 85000,
+      "date": "2026-04-12",
+      "purpose": "Nutrition Program"
+    },
+    {
+      "id": "DON-3002",
+      "donor": "City Care Group",
+      "type": "Supplies",
+      "amount": 120,
+      "date": "2026-04-18",
+      "purpose": "Medical Camp Kits"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRO-4001",
+      "name": "Nutrition Support Program",
+      "lead": "Ananya Singh",
+      "beneficiaries": 450,
+      "status": "Active",
+      "startDate": "2026-02-05"
+    },
+    {
+      "id": "PRO-4002",
+      "name": "Rural Literacy Mission",
+      "lead": "Rohit Das",
+      "beneficiaries": 280,
+      "status": "Ongoing",
+      "startDate": "2026-01-15"
+    }
+  ]
+}

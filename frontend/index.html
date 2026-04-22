@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO Resource Management System</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div>
+          <p class="eyebrow">Community Impact Suite</p>
+          <h1>NGO Resource Management System</h1>
+          <p class="sidebar-copy">
+            Track inventory, volunteers, donations, and project delivery from one dashboard.
+          </p>
+        </div>
+        <div class="sidebar-highlight">
+          <h2>Core Modules</h2>
+          <ul>
+            <li>Resource inventory monitoring</li>
+            <li>Volunteer allocation and records</li>
+            <li>Donation history management</li>
+            <li>Project oversight with beneficiary reach</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h2>Operational visibility for social impact teams</h2>
+            <p class="hero-copy">
+              This demo project is designed for college showcases and GitHub portfolios. It gives NGOs a
+              simple way to monitor resources and support better planning.
+            </p>
+          </div>
+          <div class="hero-badge">
+            <span>Backend</span>
+            <strong>Node.js API</strong>
+            <small>Frontend + Backend in one project</small>
+          </div>
+        </section>
+
+        <section class="stats-grid" id="statsGrid"></section>
+
+        <section class="panel-grid">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Inventory</p>
+                <h3>Resources</h3>
+              </div>
+              <button class="ghost-button" data-target="resourceForm">Add Resource</button>
+            </div>
+            <form id="resourceForm" class="entry-form hidden">
+              <input name="name" type="text" placeholder="Resource name" required />
+              <input name="category" type="text" placeholder="Category" required />
+              <input name="quantity" type="number" placeholder="Quantity" required />
+              <input name="unit" type="text" placeholder="Unit" required />
+              <input name="location" type="text" placeholder="Location" required />
+              <select name="status" required>
+                <option value="">Status</option>
+                <option>In Stock</option>
+                <option>Low Stock</option>
+                <option>Allocated</option>
+              </select>
+              <button type="submit">Save Resource</button>
+            </form>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Qty</th>
+                    <th>Status</th>
+                    <th>Location</th>
+                  </tr>
+                </thead>
+                <tbody id="resourcesTable"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Team</p>
+                <h3>Volunteers</h3>
+              </div>
+              <button class="ghost-button" data-target="volunteerForm">Add Volunteer</button>
+            </div>
+            <form id="volunteerForm" class="entry-form hidden">
+              <input name="name" type="text" placeholder="Volunteer name" required />
+              <input name="email" type="email" placeholder="Email" required />
+              <input name="phone" type="text" placeholder="Phone number" required />
+              <input name="skill" type="text" placeholder="Primary skill" required />
+              <input name="availability" type="text" placeholder="Availability" required />
+              <input name="assignedProject" type="text" placeholder="Assigned project" required />
+              <button type="submit">Save Volunteer</button>
+            </form>
+            <div class="cards-list" id="volunteersList"></div>
+          </article>
+        </section>
+
+        <section class="panel-grid">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Funding</p>
+                <h3>Donations</h3>
+              </div>
+              <button class="ghost-button" data-target="donationForm">Add Donation</button>
+            </div>
+            <form id="donationForm" class="entry-form hidden">
+              <input name="donor" type="text" placeholder="Donor name" required />
+              <select name="type" required>
+                <option value="">Donation type</option>
+                <option>Money</option>
+                <option>Supplies</option>
+              </select>
+              <input name="amount" type="number" placeholder="Amount / quantity" required />
+              <input name="date" type="date" required />
+              <input name="purpose" type="text" placeholder="Purpose" required />
+              <button type="submit">Save Donation</button>
+            </form>
+            <div class="cards-list" id="donationsList"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Programs</p>
+                <h3>Projects</h3>
+              </div>
+              <button class="ghost-button" data-target="projectForm">Add Project</button>
+            </div>
+            <form id="projectForm" class="entry-form hidden">
+              <input name="name" type="text" placeholder="Project name" required />
+              <input name="lead" type="text" placeholder="Project lead" required />
+              <input name="beneficiaries" type="number" placeholder="Beneficiaries" required />
+              <select name="status" required>
+                <option value="">Project status</option>
+                <option>Active</option>
+                <option>Ongoing</option>
+                <option>Completed</option>
+              </select>
+              <input name="startDate" type="date" required />
+              <button type="submit">Save Project</button>
+            </form>
+            <div class="cards-list" id="projectsList"></div>
+          </article>
+        </section>
+
+        <section class="footer-note">
+          <h3>Suggested college presentation angle</h3>
+          <p>
+            Present this project as a digital operations platform that helps NGOs reduce manual tracking,
+            improve transparency, and make faster data-driven decisions.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
